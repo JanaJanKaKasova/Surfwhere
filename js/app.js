@@ -1,13 +1,10 @@
-// alert('Hello World');
 function isWindy(speed) {
-	if (speed > 5) {
-		alert('It is windy');
-	} else {
-		alert('It is not windy');
-	}
-}
+		return speed > 5
 
-isWindy(4); 
-isWindy(10);
-isWindy(120);
-isWindy(2);
+let lisbonSpeed = 10;
+
+if (isWindy(lisbonSpeed)) {
+	alert('It is windy');
+} else {
+	alert('It is not windy');
+}
