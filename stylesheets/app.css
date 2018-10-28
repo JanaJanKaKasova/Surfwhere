@@ -52,10 +52,22 @@
   }
   /*this whole piece of CSS is for the cover video*/
 
+.navbar-brand {
+	font-family: 'Lobster', cursive;
+	font-size: 2rem;
+}  
 .navbar-text {
 	font-size: 18px;
 	padding-top: 15px;
 }
+
+/*this was to navbar */
+
+.display-4 {
+	font-family: 'Lobster', cursive;
+}
+
+/*this was to the jumbotron logo*/
 
 .sun-icon {
 	color: yellow;
