@@ -50,6 +50,12 @@
   .video-container video.fillWidth {
     width: 100%;
   }
+  /*this whole piece of CSS is for the cover video*/
+
+.navbar-text {
+	font-size: 18px;
+	padding-top: 15px;
+}
 
 .sun-icon {
 	color: yellow;
