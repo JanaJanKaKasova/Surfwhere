@@ -68,6 +68,11 @@
 }
 
 /*this was to the jumbotron logo*/
+.form-inline {
+  align-content: right;
+}
+
+/*this was styling of the black SurfWeather navbar*/
 
 .sun-icon {
 	color: yellow;
