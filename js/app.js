@@ -57,3 +57,45 @@ $( document ).ready(function() {
     });
   }
 
+//the following code is for the actual temperature navbar
+/* $ (document.getElementsById ('actualweather'))
+  var temp;
+  var loc;
+  var day;
+  var date;
+  var icon;
+  var wind;
+  var direction;
+
+  function update(weather) {
+    temp.innerHTML = weather.temp;
+    loc.innerHTML = weather.loc;
+    day.innerHTML = weather.day;
+    date.innerHTML = weather.date;
+    icon.href = "https://use.fontawesome.com/releases/v5.4.1/css/all.css";
+    wind.innerHTML = weather.wind;
+    direction.innerHTML = weather.direction;
+  }
+
+  window.onload = function () {
+    temp = document.getElementById('temperature');
+    loc = document.getElementById('location'); 
+    day = document.getElementById('day');
+    date = document.getElementById('date');
+    icon = document.getElementById('icon');
+    wind = document.getElementById('wind');
+    direction = document.getElementById('direction');
+
+    var weather = ();
+    weather.temp = 20;
+    weather.loc = 'Lisbon';
+    weather.day = 'Monday';
+    weather.date = '12.11.';
+    weather.icon = main-fa-cloud-sun;
+    weather.wind = 5;
+    weather.direction = N;
+
+    update (weather);
+  } */
+
+

@@ -51,26 +51,25 @@
 					</form>
 				</nav>	
 
-      <div class="container">
+      <div class="container actualweather">
 				<div class="row">
 					<div class="col-md-5 pt-3">
 						<div class="row-md-3 pt-3 Location">
-							Carcavelos
-						</div>
+							<div class="location"><span id="location">Carcavelos</span></div>
+						</div> 
 						<div class="row-md-3 pt-0 pb-5 lead">
-							Tuesday, 30.10
+							<div class="day"><span id="day">Tuesday</span><span id="date">30.10.</span></div>
 						</div>
 					</div>
 
 					<div class="col-md-1 pt-3">
 						<div class="row-md-3 pt-3">
-							<i class="fas fa-sun main-sun-icon"></i>
+							<i class="fas fa-sun main-sun-icon" id="icon"></i>
 						</div>
 					</div>
 
 					<div class="col-md-1 pt-3">
-						<div class="row-md-3 pt-3 actualtemp">
-							13°C
+						<div class="row-md-3 pt-3 actualtemp"><span id="actualtemp">13</span>°C
 						</div>
 					</div>
 
@@ -78,10 +77,10 @@
 
 					<div class="col-md-2 pt-3">
 							<div class="row-md-3 pt-4">
-								wind: 32km/h
+								wind: <span id="wind">32</span>km/h
 							</div>
 							<div class="row-md-3 pt-0 pb-5">
-								direction: NW
+								direction: <span id="direction">NW</span>
 							</div>
 						</div>
 
