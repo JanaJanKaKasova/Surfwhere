@@ -57,8 +57,9 @@ $( document ).ready(function() {
     });
   }
 
+
 //the following code is for the actual temperature navbar
-/* $ (document.getElementsById ('actualweather'))
+/*$ (document.getElementsById ('actualweather'))
   var temp;
   var loc;
   var day;
@@ -96,6 +97,5 @@ $( document ).ready(function() {
     weather.direction = N;
 
     update (weather);
-  } */
-
-
+  } 
+*/
