@@ -64,9 +64,6 @@
 
 /*this was to navbar */
 
-.jumbo {
-  bottom: 500px;
-}
 
 .display-4 {
 	font-family: 'Lobster', cursive;
@@ -74,7 +71,7 @@
 
 /*this was to the jumbotron logo*/
 
-.Location {
+.weather-summary-header {
   font-size: 1.5rem;
 }
 
@@ -84,8 +81,15 @@
   text-align: center;
 }
 
-.actualtemp {
+.weather-temp--today {
   font-size: 2.5rem;
+}
+
+.weather-unit__text--today {
+  color:       #333;
+  float:       left;
+  font-size:   16px;
+  line-height: 1.5;
 }
 
 .Dayoftheweek {

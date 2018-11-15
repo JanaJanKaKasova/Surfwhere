@@ -1,6 +1,27 @@
 // jQuery is required to run this code
-// this whole code is for the cover
 $( document ).ready(function() {
+
+  // weather app code
+  /*let selected = document.querySelector('.day__block--selected')
+  let days = document.querySelectorAll('.day__block');
+  let todayTemp = document.querySelector('.weather-temp--today');
+  let todayIcon = document.querySelector('.weather__icon--today');
+
+  function refreshTemp() {
+    todayTemp.innerHTML = this.getAttribute('max');
+    document.querySelector('.day__block--selected').classList.remove('day__block--selected');
+    this.classList.add('day__block--selected');
+
+    let iconPath = 'images/' + this.getAttribute('ćonditions') + '.png'
+    todayIcon.setAttribute('src', iconPath);
+  };
+
+  days.forEach(function(day, index) {
+    day.addEventListener('click', refreshTemp);
+  });*/
+
+  //video banner code
+  
     scaleVideoContainer();
 
     initBannerVideoSize('.video-container .poster img');
@@ -58,7 +79,7 @@ $( document ).ready(function() {
   }
 
 
-//the following code is for the actual temperature navbar
+//the following code is for the actual temperature navbar from the YT video
 /*$ (document.getElementsById ('actualweather'))
   var temp;
   var loc;
