@@ -105,6 +105,15 @@
 .weather-temp--today {
   font-size: 2.5rem;
   padding-top: 10px;
+  float:        left;
+}
+
+.weather-unit__text--today {
+  color:      black;
+  float:       left;
+  font-size:   2.5rem;
+  line-height: 1.5;
+  padding-top: 10px;
 }
 
 .weather-detail__text {
