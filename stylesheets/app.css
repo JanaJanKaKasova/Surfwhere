@@ -70,23 +70,12 @@
 }
 
 /*this was to the jumbotron logo*/
-
-.weather-summary-header {
-  font-size: 1.5rem;
-}
+/*icons styling follows*/
 
 .main-sun-icon {
   color: yellow;
   font-size: 70px;
   text-align: center;
-}
-
-.weather-temp--today {
-  font-size: 2.5rem;
-}
-
-.Dayoftheweek {
-  font-size: 1.5rem;
 }
 
 .sun-icon {
@@ -107,4 +96,26 @@
   text-align: center;
 }
 
+/*matt's classes styling*/
 
+.weather-summary-header {
+  font-size: 1.5rem;
+}
+
+.weather-temp--today {
+  font-size: 2.5rem;
+  padding-top: 10px;
+}
+
+.weather-detail__text {
+  color:       #0c0c0c;
+  font-size:   16px;
+  font-weight: 100;
+  line-height: 20px;
+}
+
+.day__block--selected {
+  background-color: #fcfcfc;
+  border-radius:    1px;
+  border:           1px solid #e9e9e9;
+}
