@@ -12,7 +12,7 @@ $( document ).ready(function() {
     document.querySelector('.day__block--selected').classList.remove('day__block--selected');
     this.classList.add('day__block--selected');
 
-    let iconPath = 'images/' + this.getAttribute('ćonditions') + '.png'
+    let iconPath = 'images/' + this.getAttribute('conditions') + '.png';
     todayIcon.setAttribute('src', iconPath);
   };
 
