@@ -1,7 +1,7 @@
 // jQuery is required to run this code
 $( document ).ready(function() {
 
-  /*let selected      = document.querySelector('.day__block--selected');
+  let selected      = document.querySelector('.day__block--selected');
   let days          = document.querySelectorAll('.day__block');
   let temperature   = document.querySelector('.weather-temp--today');
   let wind          = document.querySelector('#wind-speed');
@@ -21,13 +21,14 @@ $( document ).ready(function() {
         console.log(response.data);
         temperature.innerHTML = Math.round(response.data.main.temp);
         precipitation.innerHTML = Math.round(response.data.main.humidity);
-        place.innerHTML = String('Lisbon');
-        wind.innerHTML = Math.round(response.data.main.wind);
-        description.innerHTML = String(response.data.)
+        place.innerHTML = (response.data.name);
+        description.innerHTML = (response.data.weather[0].description);
+        wind.innerHTML = Math.round(response.data.wind.speed);
+        direction.innerHTML = Math.round(response.data.wind.deg);
+        //icon.innerHTML = (response.data.weather[0].icon); nefunguje a vrací jen d02
+    });
 
-    });*/
-
-  // weather app code
+  // weather app code podle sup-master na selectory
   /*let selected = document.querySelector('.day__block--selected')
   let days = document.querySelectorAll('.day__block');
   let todayTemp = document.querySelector('.weather-temp--today');
