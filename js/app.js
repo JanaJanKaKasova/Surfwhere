@@ -25,7 +25,8 @@ $( document ).ready(function() {
         description.innerHTML = (response.data.weather[0].description);
         wind.innerHTML = Math.round(response.data.wind.speed);
         direction.innerHTML = Math.round(response.data.wind.deg);
-        //icon.innerHTML = (response.data.weather[0].icon); nefunguje a vrací jen d02
+        //todayIcon.setAttribute = ('src', response.data.weather[0].icon);
+        //icon.innerHTML = (response.data.weather[0].icon); does not work, returns only d02
     });
 
   // weather app code podle sup-master na selectory
