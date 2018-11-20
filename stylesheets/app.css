@@ -71,6 +71,11 @@
 /*this was to the jumbotron logo*/
 /*icons styling follows*/
 
+.weather__icon--today {
+  font-size: 70px;
+  text-align: center;
+}
+
 .main-sun-icon {
   color: yellow;
   font-size: 70px;
