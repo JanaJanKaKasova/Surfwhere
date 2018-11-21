@@ -46,8 +46,8 @@
 
 			<nav class="navbar navbar-light bg-light rounded">
 					<a class="navbar-brand">Surfwhere Weather</a>
-					<form class="form-inline text-right">
-						<input class="form-control mr-sm-2" type="search" placeholder="Surf spot" aria-label="Search">
+					<form class="form-inline text-right" id="weather__form">
+						<input class="form-control mr-sm-2" id="weather__form-location" type="search" placeholder="Surf spot" aria-label="Search">
 						<button class="btn btn-outline-info my-2 my-sm-0" type="submit"><span id="Searchbutton">Search</span></button>
 					</form>
 				</nav>	
@@ -55,12 +55,17 @@
       <div class="container weather-container weather-summary">
 				<div class="row">
 					<div class="col-md-5 pt-3">
-						<div class="row-md-3 pt-3">
+						<div class="row-md-2 pt-3">
 							<div class="weather-summary-header">
 								<h3 id="weather-location"></h3>
 							</div>
 						</div> 
-						<div class="row-md-3 pt-0 pb-5 lead">
+						<div class="row-md-2 pt-0 pb-0"> 
+							<div class="weather-detail__text">
+								<span id="weather-date"></span> (WET)
+							</div>
+						</div>
+						<div class="row-md-2 pt-0 pb-5 lead">
 							<div class="weather-detail__text">
 								<span id="weather-description"></span>
 							</div>
@@ -96,7 +101,7 @@
 								Wind: <span id="wind-speed"></span> km/h
 							</div>
 							<div class="row-md-2 pt-0 pb-5 weather-detail__text">
-								Direction: <span id="wind-direction"></span> 
+								Direction: <span id="wind-direction"></span>°
 							</div>
 						</div>
 						
