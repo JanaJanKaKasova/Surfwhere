@@ -11,7 +11,7 @@ $( document ).ready(function() {
   let place         = document.querySelector('#weather-location');
   let icon          = document.querySelector('.weather__icon--today');
   let form          = document.querySelector('#weather__form');
-  let formLocation = document.querySelector('#weather__form-location');
+  let formLocation  = document.querySelector('#weather__form-location');
 
   //OpenWeather API
   let root   = 'https://api.openweathermap.org';
@@ -19,12 +19,12 @@ $( document ).ready(function() {
 
   //making the date friendly
   function friendlyDate(date) {
-    let days = ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun'];
+    let days = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat",];
     let minutes = date.getMinutes();
     if (minutes < 10) minutes += '0'
   
-    return days[date.getDay() - 1] + ' ' + date.getHours() + ":" + minutes;
-  };
+    return days[date.getDay()] + " " + date.getHours() + ":" + minutes;
+  }
 
   navigator.geolocation.getCurrentPosition(function(position) {
     function refreshWeather(query) {
