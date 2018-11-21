@@ -17,6 +17,7 @@ $( document ).ready(function() {
   let root   = 'https://api.openweathermap.org';
   let apiKey = '029474316bb793be56fc4dee0d85fa00';
 
+  //making the date friendly
   function friendlyDate(date) {
     let days = ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun'];
     let minutes = date.getMinutes();
@@ -35,7 +36,7 @@ $( document ).ready(function() {
         description.innerHTML = response.data.weather[0].main;
         temperature.innerHTML = Math.round(response.data.main.temp);
         wind.innerHTML = Math.round(response.data.wind.speed);
-        direction.innerHTML = Math.round(response.data.wind.deg);
+        direction.innerHTML = Math.round(response.data.wind.deg) + '°';
         precipitation.innerHTML = Math.round(response.data.main.humidity);
         icon.setAttribute('src', 'http://openweathermap.org/img/w/' + response.data.weather[0].icon + '.png')
       });  
