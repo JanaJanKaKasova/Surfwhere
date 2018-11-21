@@ -50,6 +50,20 @@
   .video-container video.fillWidth {
     width: 100%;
   }
+
+  .surf-quote {
+    position: relative;
+    z-index: 3;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    padding-top: 19rem;
+    color: #F8F9FA;
+    font-family: 'Lobster', cursive;
+    font-size: 2.5rem;
+  }
+
+
   /*this whole piece of CSS is for the cover video*/
 
 .navbar-brand {
