@@ -21,7 +21,7 @@ $( document ).ready(function() {
   function friendlyDate(date) {
     let days = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat",];
     let minutes = date.getMinutes();
-    if (minutes < 10) minutes += '0'
+    if (minutes < 10) minutes = "0" + minutes;
   
     return days[date.getDay()] + " " + date.getHours() + ":" + minutes;
   }
