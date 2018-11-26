@@ -10,6 +10,7 @@ $(document).ready(function() {
   let description = document.querySelector("#weather-description");
   let place = document.querySelector("#weather-location");
   let icon = document.querySelector(".weather__icon--today");
+  let refreshBtn = document.querySelector("#weather-refresh");
   let form = document.querySelector("#weather__form");
   let formLocation = form.querySelector("#weather__form-location");
 
