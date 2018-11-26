@@ -93,6 +93,9 @@ $(document).ready(function() {
             );
             element.querySelector("#weather-description").innerHTML =
               response.data.list[index].weather[0].main;
+            element.querySelector(".wind-direction").innerHTML = Math.round(
+              response.data.list[index].wind.deg
+            );
           });
       });
   }
