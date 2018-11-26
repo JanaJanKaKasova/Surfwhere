@@ -46,6 +46,7 @@
 
 			<nav class="navbar navbar-light bg-light rounded">
 					<a class="navbar-brand">Surfwhere Weather</a>
+					<button id="weather-refresh" class="btn btn-info">Current Location</button>
 					<form class="form-inline text-right" id="weather__form">
 						<input class="form-control mr-sm-2" id="weather__form-location" type="search" placeholder="Enter a place..." aria-label="Search">
 						<button class="btn btn-outline-info my-2 my-sm-0" type="submit"><span id="Searchbutton">Search</span></button>
@@ -109,25 +110,24 @@
 
 			
     		<div class="row">
-    			<div class="col-md-2 border-right border-top border-bottom pt-3 pb-3 mb-5 day__block day__block--selected" max="15" min="11" conditions="mostly sunny">
-					<div class="day__block-day">
-						Tuesday
-					  </div>
+    			<div class="col-md-2 border-right border-top border-bottom pt-3 pb-3 mb-5 day__block">
+						<div class="day__block-date">
+					  	</div>
 						
 						<div class="row-md-3 pt-3">
-							<i class="fas fa-sun sun-icon mx-auto" alt="" class="day__block-image"></i>
+							<img class="day__block-image">
 							</div>
 								<div class="row pt-3 mx-auto">
 									<div class="weather-detail__text" id="weather-description"></div>
 								</div>
 								<div class="row pt-3 mx-auto day__block-temps">
-									Max: <span class="day__block-temp day__block-temp--max"></span>
+									Max: <span class="day__block-temp day__block-temp--max"></span> °C
 								</div>
 								<div class="row pt-0 mx-auto day__block-temps">
-									Min: <span class="day__block-temp day__block-temp--min"></span>
+									Min: <span class="day__block-temp day__block-temp--min"></span> °C
 								</div>
 								<div class="row pt-3 mx-auto">
-									Wind: <span id="wind-speed"></span> km/h
+									Wind: <span class="wind-speed"></span> km/h
 								</div>
 								<div class="row pt-0 mx-auto">
 									direction: NW
@@ -144,24 +144,23 @@
 
     			</div>
     			<div class="col-md-2 border-right border-top border-bottom pt-3 pb-3 mb-5 day__block" max="16" min="12" conditions="rainy">
-					<div class="day__block-day">
-						Wednesday
+					<div class="day__block-date">
 					</div>	
 					
 						<div class="row-md-3 pt-3">
-								<i class="fas fa-umbrella umbrella-icon mx-auto" alt="" class="day__block-image"></i>
+							<img class="day__block-image">
 								</div>
 									<div class="row pt-3 mx-auto">
 										<div class="weather-detail__text" id="weather-description"></div>
 									</div>
 									<div class="row pt-3 mx-auto day__block-temps">
-										Max: <span class="day__block-temp day__block-temp--max"></span>
+										Max: <span class="day__block-temp day__block-temp--max"></span> °C
 									</div>
 									<div class="row pt-0 mx-auto day__block-temps">
-										Min: <span class="day__block-temp day__block-temp--min"></span>
+										Min: <span class="day__block-temp day__block-temp--min"></span> °C
 									</div>
 									<div class="row pt-3 mx-auto">
-										Wind: <span id="wind-speed"></span> km/h
+										Wind: <span class="wind-speed"></span> km/h
 									</div>
 									<div class="row pt-0 mx-auto">
 										direction: W
@@ -177,24 +176,23 @@
 									</div>
     			</div>
     			<div class="col-md-2 border-right border-top border-bottom pt-3 pb-3 mb-5 day__block" max="18" min="15" conditions="partly cloudy">
-						<div class="day__block-day">
-							Friday
+						<div class="day__block-date">
 						</div>
 
 						<div class="row-md-3 pt-3">
-								<i class="fas fa-cloud-sun clou-sun-icon mx-auto" alt="" class="day__block-image"></i>
+							<img class="day__block-image">
 								</div>
 									<div class="row pt-3 mx-auto">
 										<div class="weather-detail__text" id="weather-description"></div>
 									</div>
 									<div class="row pt-3 mx-auto day__block-temps">
-										Max: <span class="day__block-temp day__block-temp--max"></span>
+										Max: <span class="day__block-temp day__block-temp--max"></span> °C
 									</div>
 									<div class="row pt-0 mx-auto dday__block-temps">
-										Min: <span class="day__block-temp day__block-temp--min"></span>
+										Min: <span class="day__block-temp day__block-temp--min"></span> °C
 									</div>
 									<div class="row pt-3 mx-auto">
-										Wind: <span id="wind-speed"></span> km/h
+										Wind: <span class="wind-speed"></span> km/h
 									</div>
 									<div class="row pt-0 mx-auto">
 										direction: N
@@ -210,24 +208,23 @@
 									</div>
     			</div>	
     			<div class="col-md-2 border-right border-top border-bottom pt-3 pb-3 mb-5 day__block" max="20" min="15" conditions="mostly sunny">
-						<div class="day__block-day">
-							Saturday
+						<div class="day__block-date">
 						</div>
 						
 						<div class="row-md-3 pt-3">
-								<i class="fas fa-sun sun-icon mx-auto" alt="" class="day__block-image"></i>
+							<img class="day__block-image">
 								</div>
 									<div class="row pt-3 mx-auto">
 										<div class="weather-detail__text" id="weather-description"></div>
 									</div>
 									<div class="row pt-3 mx-auto day__block-temps">
-										Max: <span class="day__block-temp day__block-temp--max"></span>
+										Max: <span class="day__block-temp day__block-temp--max"></span> °C
 									</div>
 									<div class="row pt-0 mx-auto day__block-temps">
-										Min: <span class="day__block-temp day__block-temp--min"></span>
+										Min: <span class="day__block-temp day__block-temp--min"></span> °C
 									</div>
 									<div class="row pt-3 mx-auto">
-										Wind: <span id="wind-speed"></span> km/h
+										Wind: <span class="wind-speed"></span> km/h
 									</div>
 									<div class="row pt-0 mx-auto">
 										direction: N
@@ -243,24 +240,23 @@
 									</div>
 					</div>
 					<div class="col-md-2 border-right border-top border-bottom pt-3 pb-3 mb-5 day__block" max="21" min="17" conditions="sunny">
-							<div class="day__block-day">
-								Sunday
+							<div class="day__block-date">
 							</div>
 						
 						<div class="row-md-3 pt-3">
-								<i class="fas fa-sun sun-icon mx-auto" alt="" class="day__block-image"></i>
+							<img class="day__block-image">
 								</div>
 									<div class="row pt-3 mx-auto">
 										<div class="weather-detail__text" id="weather-description"></div>
 									</div>
 									<div class="row pt-3 mx-auto day__block-temps">
-										Max: <span class="day__block-temp day__block-temp--max"></span>
+										Max: <span class="day__block-temp day__block-temp--max"></span> °C
 									</div>
 									<div class="row pt-0 mx-auto day__block-temps">
-										Min: <span class="day__block-temp day__block-temp--min"></span>
+										Min: <span class="day__block-temp day__block-temp--min"></span> °C
 									</div>
 									<div class="row pt-3 mx-auto">
-										Wind: <span id="wind-speed"></span> km/h
+										Wind: <span class="wind-speed"></span> km/h
 									</div>
 									<div class="row pt-0 mx-auto">
 										direction: NE
@@ -276,24 +272,24 @@
 									</div>
 					</div>
 					<div class="col-md-2 border-top border-bottom pt-3 pb-3 mb-5 day__block" max="18" min="15" conditions="partly cloudy">
-							<div class="day__block-day">
-								Monday
+							<div class="day__block-date">
+
 							</div>
 						
 						<div class="row-md-3 pt-3">
-								<i class="fas fa-cloud-sun clou-sun-icon mx-auto" alt="" class="day__block-image"></i>
+							<img class="day__block-image">
 								</div>
 									<div class="row pt-3 mx-auto">
 										<div class="weather-detail__text" id="weather-description"></div>
 									</div>
 									<div class="row pt-3 mx-auto day__block-temps">
-										Max: <span class="day__block-temp day__block-temp--max"></span>
+										Max: <span class="day__block-temp day__block-temp--max"></span> °C
 									</div>
 									<div class="row pt-0 mx-auto day__block-temps">
-										Min: <span class="day__block-temp day__block-temp--min"></span>
+										Min: <span class="day__block-temp day__block-temp--min"></span> °C
 									</div>
 									<div class="row pt-3 mx-auto">
-										Wind: <span id="wind-speed"></span> km/h
+										Wind: <span class="wind-speed"></span> km/h
 									</div>
 									<div class="row pt-0 mx-auto">
 										direction: NW
