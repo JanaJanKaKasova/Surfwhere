@@ -162,3 +162,8 @@
 .wind-direction {
   margin-left: 5px;
 }
+
+footer {
+  padding-bottom: 2rem;
+  text-align: center;
+}
